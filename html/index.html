@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>distributor minigame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav ">
+        <div class="task hidden">
+            <div class="distributor">
+                <div class="distributor__left-panel">
+                <svg class="distributor__left-panel-back">
+                    <g>
+                    <path d="M4 0 L29 25 L271 25 L296 0 Z" stroke="none" stroke-width="0" fill="#CDCBCC" />
+                    <path d="M0 4 L25 29 L25 471 L0 496 Z" stroke="none" stroke-width="0" fill="#585858" />
+                    <path d="M300 4 L275 29 L275 471 L300 496 Z" stroke="none" stroke-width="0" fill="#585858" />
+                    <path d="M4 500 L29 475 L271 475 L296 500 Z" stroke="none" stroke-width="0" fill="#636562" />
+                    </g>
+                </svg>
+                <div class="distributor__block distributor__block_yellow distributor__block_active">
+                    <svg class="distributor__wires">
+                    <g>
+                        <path d="M179 54 L254 54 C256 56, 256 57, 254 58 L179 58" stroke="#000" stroke-width="2" fill="#393939" />
+                        <path d="M179 62 L240 62 L240 100 L254 100 C256 102, 257 103, 254 104 L236 104 L236 66 L179 66" stroke="#000" stroke-width="2" fill="#393939" />
+                        <path d="M225 56 L255 56 M225 64 L238 64 L238 102 L255 102" stroke="#00000080" stroke-width="4" fill="none" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__circle">
+                    <g>
+                        <path d="M165 52 L175 52 C181 54, 181 60, 175 62 L165 62" stroke="#000" stroke-width="1" fill="#B30B11" />
+                        <path d="M165 60 L175 60 C181 62, 181 68, 175 70 L165 70" stroke="#000" stroke-width="1" fill="#B30B11" />
+                        <path d="M165 52 L175 52 C181 54, 181 60, 175 62 L165 62
+                                L165 58 L175 58
+                                C177 57, 177 56, 175 54
+                                L165 54 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M165 60 L175 60 C181 62, 181 68, 175 70 L165 70
+                                L165 66 L173 66
+                                C175 65, 176 64, 173 62
+                                L165 62 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M119 55 L161 55 C163 55, 165 55, 166 55 L166 77 C165 80, 163 80, 161 80 L119 80 Z" stroke="none" stroke-width="0" fill="#00000040" />
+                        <path d="M118 47 L160 47 C162 47, 164 47, 165 50 L165 72 C164 75, 162 75, 160 75 L118 75 Z" stroke="#000" stroke-width="2" fill="#676868" />
+                        <path d="M160 47 L160 66 C159 67, 157 69, 156 70 L124 70 L120 75 L165 75 L165 47 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M118 58 L140 58 C142 58, 141 57, 142 56 L142 47 M138 47 L138 52 L132 52 L132 58 M124 58 L126 62 L150 62 L150 55 L165 55 M155 62 L165 62 M140 62 L141 68 L152 68 M157 68 L165 68" stroke="var(--distr-wire-color)" stroke-width="1" fill="none" />
+
+                        <circle cx="61" cy="66" r="52" stroke="#00000080" stroke-width="16" fill="none" />
+                        <circle cx="61" cy="61" r="60" stroke="#000" stroke-width="2" fill="none" />
+                        <circle cx="61" cy="61" r="44" stroke="#000" stroke-width="2" fill="none" />
+                        <circle cx="61" cy="61" r="52" stroke="var(--distr-color)" stroke-width="16" fill="none" />
+                        <circle cx="61" cy="61" r="58" stroke="#00000040" stroke-width="4" fill="none" />
+                        <circle cx="61" cy="61" r="46" stroke="#00000040" stroke-width="4" fill="none" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__thumb" style="margin-top: 4px;">
+                    <g>
+                        <path d="M60 1 C70 2, 72 -4, 68 28 C68 28, 68 28, 66 30 L54 30 C54 30, 54 30, 52 28 C48 -4, 52 2, 60 0" stroke="none" stroke-width="0" fill="#00000080" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__thumb">
+                    <g>
+                        <path d="M60 1 C70 2, 72 -4, 68 28 C68 28, 68 28, 66 30 L54 30 C54 30, 54 30, 52 28 C48 -4, 52 2, 60 0" stroke="#000" stroke-width="2" fill="#494A47" />
+                    </g>
+                    </svg>
+                </div>
+                <div class="distributor__block distributor__block_blue">
+                    <svg class="distributor__wires">
+                    <g>
+                        <path d="M179 51 L230 51 L230 26 L240 26 L240 1 L254 1 C256 3, 257 4, 254 5 L244 5 L244 30 L234 30 L234 55 L179 55"  stroke="#000" stroke-width="2" fill="#393939" />
+                        <path d="M179 59 L240 59 L240 38 C256 37, 256 40, 254 42 L244 42 L244 63 L179 63" stroke="#000" stroke-width="2" fill="#393939" />
+                        <path d="M175 67 L240 67 L240 100 L254 100 C256 102, 257 103, 254 104 L236 104 L236 71 L175 71" stroke="#000" stroke-width="2" fill="#393939" />
+                        <path d="M225 53 L232 53 L232 28 L242 28 L242 3 L255 3
+                                M225 61 L242 61 L242 40 L255 40
+                                M225 68 L238 68 L238 102 L255 102" stroke="#00000080" stroke-width="4" fill="none" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__circle">
+                    <g>
+                        <path d="M165 48 L175 48 C181 50, 181 56, 175 58 L165 58" stroke="#000" stroke-width="1" fill="#B30B11" />
+                        <path d="M165 56 L175 56 C181 58, 181 64, 175 66 L165 66" stroke="#000" stroke-width="1" fill="#B30B11" />
+                        <path d="M165 64 L171 64 C177 66, 177 72, 171 74 L165 74" stroke="#000" stroke-width="1" fill="#B30B11" />
+                        <path d="M165 48 L175 48 C181 50, 181 56, 175 58 L165 58
+                                L165 54 L175 54
+                                C177 53, 177 54, 175 50
+                                L165 50 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M165 56 L175 56 C181 58, 181 64, 175 66 L165 66
+                                L165 62 L172 62
+                                C174 61, 174 62, 172 58
+                                L165 58 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M165 64 L171 64 C177 66, 177 72, 171 74 L165 74
+                                L165 70 L169 70
+                                C171 69, 172 68, 169 66
+                                L165 66 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M119 55 L161 55 C163 55, 165 55, 166 55 L166 77 C165 80, 163 80, 161 80 L119 80 Z" stroke="none" stroke-width="0" fill="#00000040" />
+                        <path d="M118 47 L160 47 C162 47, 164 47, 165 50 L165 72 C164 75, 162 75, 160 75 L118 75 Z" stroke="#000" stroke-width="2" fill="#676868" />
+                        <path d="M160 47 L160 66 C159 67, 157 69, 156 70 L124 70 L120 75 L165 75 L165 47 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M118 60 L164 60
+                                M118 55 L137 55 L137 60
+                                M135 55 L135 51 L147 51 M149 51 L153 51 M155 51 L164 51.5
+                                M118 67 L145 67 L145 60 M145 64 L164 64" stroke="var(--distr-wire-color)" stroke-width="1" fill="none" />
+
+                        <circle cx="61" cy="66" r="52" stroke="#00000080" stroke-width="16" fill="none" />
+                        <circle cx="61" cy="61" r="60" stroke="#000" stroke-width="2" fill="none" />
+                        <circle cx="61" cy="61" r="44" stroke="#000" stroke-width="2" fill="none" />
+                        <circle cx="61" cy="61" r="52" stroke="var(--distr-color)" stroke-width="16" fill="none" />
+                        <circle cx="61" cy="61" r="58" stroke="#00000040" stroke-width="4" fill="none" />
+                        <circle cx="61" cy="61" r="46" stroke="#00000040" stroke-width="4" fill="none" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__thumb" style="margin-top: 4px;">
+                    <g>
+                        <path d="M60 1 C70 2, 72 -4, 68 28 C68 28, 68 28, 66 30 L54 30 C54 30, 54 30, 52 28 C48 -4, 52 2, 60 0" stroke="none" stroke-width="0" fill="#00000080" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__thumb">
+                    <g>
+                        <path d="M60 1 C70 2, 72 -4, 68 28 C68 28, 68 28, 66 30 L54 30 C54 30, 54 30, 52 28 C48 -4, 52 2, 60 0" stroke="#000" stroke-width="2" fill="#494A47" />
+                    </g>
+                    </svg>
+                </div>
+                <div class="distributor__block distributor__block_teal">
+                    <svg class="distributor__wires">
+                    <g>
+                        <path d="M179 51 L235 51 L235 81 L254 81 C256 83, 256 84, 254 85 L231 85 L231 55 L179 55" stroke="#000" stroke-width="2" fill="#393939" />
+                        <path d="M179 65 L220 65 L220 100 L254 100 C256 102, 257 103, 254 104 L216 104 L216 69 L179 69" stroke="#000" stroke-width="2" fill="#393939" />
+                        <path d="M225 53 L233 53 L233 83 L254 83
+                                M225 102 L254 102" stroke="#00000080" stroke-width="4" fill="none" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__circle">
+                    <g>
+                        <path d="M165 49 L175 49 C181 51, 181 56, 175 58 L165 58" stroke="#000" stroke-width="1" fill="#B30B11" />
+                        <path d="M165 62 L175 62 C181 64, 181 70, 175 72 L165 72" stroke="#000" stroke-width="1" fill="#B30B11" />
+                        <path d="M165 49 L175 49 C181 51, 181 56, 175 58 L165 58
+                                L165 54 L175 54
+                                C177 53, 177 52, 175 51
+                                L165 51 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M165 63 L175 63 C181 65, 181 70, 175 72 L165 72
+                                L165 68 L173 68
+                                C175 67, 176 66, 173 65
+                                L165 65 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M119 55 L161 55 C163 55, 165 55, 166 55 L166 77 C165 80, 163 80, 161 80 L119 80 Z" stroke="none" stroke-width="0" fill="#00000040" />
+                        <path d="M118 47 L160 47 C162 47, 164 47, 165 50 L165 72 C164 75, 162 75, 160 75 L118 75 Z" stroke="#000" stroke-width="2" fill="#676868" />
+                        <path d="M160 47 L160 66 C159 67, 157 69, 156 70 L124 70 L120 75 L165 75 L165 47 Z" stroke="none" stroke-width="0" fill="#00000060" />
+                        <path d="M118 56 L165 56 M140 56 L140 50 L153 50 M155 50 L165 50
+                                M118 59 L144 59 M137 59 L137 68 L165 68
+                                M140 59 L140 65 L165 65
+                                M146 68 L146 75" stroke="var(--distr-wire-color)" stroke-width="1" fill="none" />
+
+                        <circle cx="61" cy="66" r="52" stroke="#00000080" stroke-width="16" fill="none" />
+                        <circle cx="61" cy="61" r="60" stroke="#000" stroke-width="2" fill="none" />
+                        <circle cx="61" cy="61" r="44" stroke="#000" stroke-width="2" fill="none" />
+                        <circle cx="61" cy="61" r="52" stroke="var(--distr-color)" stroke-width="16" fill="none" />
+                        <circle cx="61" cy="61" r="58" stroke="#00000040" stroke-width="4" fill="none" />
+                        <circle cx="61" cy="61" r="46" stroke="#00000040" stroke-width="4" fill="none" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__thumb" style="margin-top: 4px;">
+                    <g>
+                        <path d="M60 1 C70 2, 72 -4, 68 28 C68 28, 68 28, 66 30 L54 30 C54 30, 54 30, 52 28 C48 -4, 52 2, 60 0" stroke="none" stroke-width="0" fill="#00000080" />
+                    </g>
+                    </svg>
+                    <svg class="distributor__thumb">
+                    <g>
+                        <path d="M60 1 C70 2, 72 -4, 68 28 C68 28, 68 28, 66 30 L54 30 C54 30, 54 30, 52 28 C48 -4, 52 2, 60 0" stroke="#000" stroke-width="2" fill="#494A47" />
+                    </g>
+                    </svg>
+                </div>
+                </div>
+                <div class="distributor__right-panel">
+                <svg class="distributor__right-panel-back">
+                    <g>
+                    <path d="M4 0 L29 25 L171 25 L196 0 Z" stroke="none" stroke-width="0" fill="#CDCBCC" />
+                    <path d="M0 4 L25 29 L25 471 L0 496 Z" stroke="none" stroke-width="0" fill="#585858" />
+                    <path d="M200 4 L175 29 L175 471 L200 496 Z" stroke="none" stroke-width="0" fill="#585858" />
+                    <path d="M4 500 L29 475 L171 475 L196 500 Z" stroke="none" stroke-width="0" fill="#636562" />
+                    </g>
+                </svg>
+                <div class="distributor__block distributor__block_yellow">
+                    <div class="distributor__progress" style="--progress-diff: 6px;"></div>
+                    <button type="button" class="distributor__btn"></button>
+                </div>
+                <div class="distributor__block distributor__block_blue">
+                    <div class="distributor__progress" style="--progress-diff: 2px;"></div>
+                    <button type="button" class="distributor__btn"></button>
+                </div>
+                <div class="distributor__block distributor__block_teal">
+                    <div class="distributor__progress" style="--progress-diff: 1px;"></div>
+                    <button type="button" class="distributor__btn"></button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hidden">
+            <div class="modal__alert">Task completed!</div>
+        </div>
+    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>
